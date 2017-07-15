@@ -432,6 +432,8 @@
   gEdkiiPeiSdMmcHostControllerPpiGuid = { 0xb30dfeed, 0x947f, 0x4396, { 0xb1, 0x5a, 0xdf, 0xbd, 0xb9, 0x16, 0xdc, 0x24 }}
 
 [Protocols]
+			     
+  gEfiEdidFindProtocolGuid  = { 0x1c0c34f6, 0xd381, 0x41fa, {0xa0, 0x49, 0x8a, 0xd0, 0x6c, 0x1a, 0x66, 0xab }}
   ## Load File protocol provides capability to load and unload EFI image into memory and execute it.
   #  Include/Protocol/LoadPe32Image.h
   #  This protocol is deprecated. Native EDKII module should NOT use this protocol to load/unload image.

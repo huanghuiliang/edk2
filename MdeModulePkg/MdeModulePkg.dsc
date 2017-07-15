@@ -107,6 +107,7 @@
   FmpAuthenticationLib|MdeModulePkg/Library/FmpAuthenticationLibNull/FmpAuthenticationLibNull.inf
   CapsuleLib|MdeModulePkg/Library/DxeCapsuleLibNull/DxeCapsuleLibNull.inf
 
+
 [LibraryClasses.EBC.PEIM]
   IoLib|MdePkg/Library/PeiIoLibCpuIo/PeiIoLibCpuIo.inf
 
@@ -223,6 +224,7 @@
 
 [Components]
   MdeModulePkg/Application/HelloWorld/HelloWorld.inf
+  MdeModulePkg/Application/EdidFindExample/EdidFindExample.inf
   MdeModulePkg/Application/MemoryProfileInfo/MemoryProfileInfo.inf
 
   MdeModulePkg/Bus/Pci/PciHostBridgeDxe/PciHostBridgeDxe.inf
@@ -435,6 +437,7 @@
   MdeModulePkg/Universal/Network/UefiPxeBcDxe/UefiPxeBcDxe.inf
   MdeModulePkg/Universal/DebugSupportDxe/DebugSupportDxe.inf
   MdeModulePkg/Universal/EbcDxe/EbcDxe.inf
+  MdeModulePkg/Universal/EDIDFindDxe/EdidFind.inf
   MdeModulePkg/Universal/EbcDxe/EbcDebugger.inf
   MdeModulePkg/Universal/EbcDxe/EbcDebuggerConfig.inf
 
