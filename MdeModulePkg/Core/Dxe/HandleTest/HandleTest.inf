@@ -1,0 +1,21 @@
+[Defines]
+  INF_VERSION				= 0x00010005
+  BASE_NAME					= HandleTest
+  FILE_GUID					= 6987936E-ED34-44db-AE97-1FA5E4ED2117
+  VERSION_STRING			= 1.0
+  MODULE_TYPE				= UEFI_APPLICATION
+  ENTRY_POINT				= UefiMain
+
+[Sources]
+  HandleTest.c
+  ../Hand/Handle.h
+
+[Packages]
+  MdePkg/MdePkg.dec
+  
+
+[LibraryClasses]
+  UefiApplicationEntryPoint
+  UefiLib
+  PcdLib
+

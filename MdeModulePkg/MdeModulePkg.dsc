@@ -225,6 +225,8 @@
 [Components]
   MdeModulePkg/Application/HelloWorld/HelloWorld.inf
   MdeModulePkg/Application/EdidFindExample/EdidFindExample.inf
+
+  MdeModulePkg/Core/Dxe/HandleTest/HandleTest.inf
   MdeModulePkg/Application/MemoryProfileInfo/MemoryProfileInfo.inf
 
   MdeModulePkg/Bus/Pci/PciHostBridgeDxe/PciHostBridgeDxe.inf
