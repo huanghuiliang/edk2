@@ -1,0 +1,26 @@
+[Defines]
+  INF_VERSION 		         = 0x00010006
+  BASE_NAME                      = MyGetEdid
+  FILE_GUID                      = 4ea97c46-7491-4dfd-0070-747010f3ce6f
+  MODULE_TYPE                    = UEFI_APPLICATION
+  VERSION_STRING                 = 0.1
+  ENTRY_POINT                    = ShellCEntryLib
+
+[Sources]
+  MyGetEDID.c
+  MyGetEDID.uni
+
+[Packages]
+  StdLib/StdLib.dec   
+  MdePkg/MdePkg.dec
+  ShellPkg/ShellPkg.dec 
+
+
+[LibraryClasses]
+  LibC
+  LibStdio
+  ShellCEntryLib   
+  ShellLib
+
+[UserExtensions.TianoCode."ExtraFiles"]
+  MyGetEDID.uni

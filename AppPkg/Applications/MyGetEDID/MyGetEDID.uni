@@ -1,0 +1,9 @@
+
+#langdef en-US "English"
+
+#string STR_720x400_70Hz	#language en-US "720 x 400 @ 70Hz[IBM,VGA]"
+#string STR_720x400_88Hz	#language en-US "720 x 400 @ 88Hz[IBM,XGA2]"
+#string STR_640x480_60Hz	#language en-US "640 x 480 @ 60Hz[IBM,VGA]"
+#string STR_640x480_67Hz	#language en-US "640 x 480 @ 67Hz[Apple,mac]"
+#string STR_640x480_72Hz	#language en-US "640 x 480 @ 72z[VESA]"
+#string STR_640x480_75Hz	#language en-US "640 x 480 @ 75z[VESA]"
