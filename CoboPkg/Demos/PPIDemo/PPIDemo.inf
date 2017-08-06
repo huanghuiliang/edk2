@@ -1,0 +1,29 @@
+
+[Defines]
+  INF_VERSION	= 0x00010005
+  BASE_NAME	= PpiDemo
+  FILE_GUID                      = 73E6F6B4-D029-4e87-8405-6067C8BD02B3
+  MODULE_TYPE                    = PEIM
+  VERSION_STRING                 = 1.0
+
+  ENTRY_POINT                    = PpiProducerInit
+
+[Sources]
+  PPIDemo.c
+
+
+[Packages]
+  MdePkg/MdePkg.dec
+  MdeModulePkg/MdeModulePkg.dec
+  CoboPkg/CoboPkg.dec
+
+
+[LibraryClasses]
+  BaseMemoryLib
+  PeimEntryPoint
+  DebugLib
+
+
+[Ppis]
+  gMyPpiTestGuid		# PPI ALWAYS_PRODUCED
+

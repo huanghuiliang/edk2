@@ -1,0 +1,12 @@
+[Defines]
+  DEC_SPECIFICATION              = 0x00010005
+  PACKAGE_NAME                   = CoboPkg
+  PACKAGE_GUID                   = 28DECF17-6C75-448f-87DC-BDE4BD579920
+  PACKAGE_VERSION                = 0.1
+
+
+[Includes]
+
+
+[Guids]
+  gMyPpiTestGuid = { 0x8BE4DF61, 0x93CA, 0x1132, { 0xAA, 0x0D, 0x00, 0xE2, 0x98, 0x03, 0x2B, 0x8C }}
