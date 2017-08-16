@@ -1,0 +1,24 @@
+
+
+#include "HiiDemoData.h"
+
+formset
+  guid = HII_DEMO_FORMSET_GUID,
+  title = STRING_TOKEN(STR_HIIDEMO_FORM_SET_TITLE),
+  help = STRING_TOKEN(STR_HIITEST_FORM_SET_HELP),
+  
+  form formid = 1,
+    title = STRING_TOKEN(STR_HIIDEMO_FORM_ADVANCED_TITLE);
+    
+    text
+    help   = STRING_TOKEN(STR_HIIDEMO_FORM_ADVANCED_TEXT_HELP),
+    text   = STRING_TOKEN(STR_HIIDEMO_FORM_ADVANCED_TEXT),
+      
+    text   = STRING_TOKEN(STR_HIITEST_NULL);
+
+      
+      
+  endform;
+  
+    
+endformset;

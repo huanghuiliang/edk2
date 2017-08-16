@@ -1,0 +1,40 @@
+
+/=#
+
+#langdef en-US "English"
+#langdef fr-FR "Francais"
+
+#string STR_HIIDEMO_FORM_SET_TITLE				#language en-US "Hii Demo"
+																					#language fr-FR "Hii Demo"
+
+#string STR_HIITEST_FORM_SET_HELP      		#language en-US  "This is a basic HII programming test"
+										                   	  #language fr-FR  "This is a basic HII programming test"
+										   																				
+#string STR_HIIDEMO_FORM_ADVANCED_TITLE				#language en-US "Advanced"
+																							#language fr-FR "Advanced"		
+																					
+#string STR_HIIDEMO_FORM_ADVANCED_TEXT			  #language en-US "Power & Performance"
+																							#language fr-FR "Power & Performance"	
+																							
+#string STR_HIIDEMO_FORM_ADVANCED_TEXT_HELP			  #language en-US "Power & Performance help"
+																							#language fr-FR "Power & Performance help"																								
+																																													
+#string STR_HIIDEMO_FORM_ADVANCED_ITEM1			  #language en-US "CPU - Power Management Control"
+																							#language fr-FR "CPU - Power Management Control"
+																							
+#string STR_HIIDEMO_FORM_ADVANCED_ITEM1_HELP			 #language en-US "CPU - Power Management Control Options"
+																						       #language fr-FR "CPU - Power Management Control Options"																							
+																																							
+#string STR_HIIDEMO_FORM_ADVANCED_ITEM2			 #language en-US "GT - Power Management Control"
+																							#language fr-FR "GT - Power Management Control"				
+
+#string STR_HIIDEMO_FORM_ADVANCED_ITEM2_HELP			 #language en-US "GT - Power Management Control Options"
+																							    #language fr-FR "GT - Power Management Control Options"																																																													
+																					
+#string STR_HIITEST_ESC                    #language en-US  "Press ESC to exit."
+                                           #language fr-FR  "Press ESC to exit."																					
+				#string STR_HIITEST_NULL           #language en-US  ""
+                                           #language fr-FR  ""																	
+																					
+																					
+																																							
