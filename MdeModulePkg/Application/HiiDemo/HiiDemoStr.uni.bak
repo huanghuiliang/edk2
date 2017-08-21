@@ -4,6 +4,11 @@
 #langdef en-US "English"
 #langdef fr-FR "Francais"
 
+#string STR_ENABLE				#language en-US "Enable"
+#string STR_DISABLE				#language en-US "Disable"
+#string STR_AUTO				  #language en-US "Auto"
+
+//1. Advanced Strings
 #string STR_HIIDEMO_FORM_SET_TITLE				#language en-US "Hii Demo"
 																					#language fr-FR "Hii Demo"
 
@@ -31,10 +36,39 @@
 #string STR_HIIDEMO_FORM_ADVANCED_ITEM2_HELP			 #language en-US "GT - Power Management Control Options"
 																							    #language fr-FR "GT - Power Management Control Options"																																																													
 																					
+#string STR_USB_BIOS_LEGACY_SUPPORT_PROMPT 				#language en-US "USB BIOS Legacy Support"		
+
+#string STR_USB_BIOS_LEGACY_SUPPORT_HELP 				#language en-US "USB BIOS Legacy Support Help"		
+
+#string STR_USB_BIOS_LEGACY_CONFIGURATION_PROMPT 				#language en-US "USB BIOS Legacy CONFIGURATION"		
+
+#string STR_USB_BIOS_LEGACY_CONFIGURATION_HELP 				#language en-US "USB BIOS Legacy CONFIGURATION Help"																																						
+
+
+
+
+#string STR_CMP_SUPPORT_PROMPT 				#language en-US "CMP Support"		
+
+#string STR_CMP_SUPPORT_PROMPT_HELP 				#language en-US "CMP Support Help"
+
+#string STR_CMP_SUPPORT_CHILD_PROMPT 				#language en-US "CMP Child Support"		
+
+#string STR_CMP_SUPPORT_CHILD_HELP 				#language en-US "CMP Child Support Help"
+																					
+																					
 #string STR_HIITEST_ESC                    #language en-US  "Press ESC to exit."
                                            #language fr-FR  "Press ESC to exit."																					
-				#string STR_HIITEST_NULL                   #language en-US  ""
+				#string STR_HIITEST_NULL           #language en-US  ""
                                            #language fr-FR  ""																	
-																					
-																					
-																																							
+
+//2. Chipset Strings																					
+#string STR_HIIDEMO_FORM_CHIPSET_TITLE				#language en-US "Chipset"
+																							#language fr-FR "Chipset"																		
+#string STR_HIIDEMO_FORM_CHIPSET_SB_ITEM			#language en-US "SB Configuration"
+																							#language fr-FR "SB Configuration"		
+#string STR_HIIDEMO_FORM_CHIPSET_NB_ITEM			#language en-US "NB Configuration"
+																							#language fr-FR "NB Configuration"	
+//#string STR_HIIDEMO_FORM_CHIPSET_TITLE				#language en-US "Chipset"
+//																							#language fr-FR "Chipset"	
+//#string STR_HIIDEMO_FORM_CHIPSET_TITLE				#language en-US "Chipset"
+//																							#language fr-FR "Chipset"																																																																																																											

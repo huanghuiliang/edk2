@@ -7,17 +7,70 @@ formset
   title = STRING_TOKEN(STR_HIIDEMO_FORM_SET_TITLE),
   help = STRING_TOKEN(STR_HIITEST_FORM_SET_HELP),
   
+  varstore HII_DEMO_DATA,
+  	varid = 0x1234,
+  	name = HiiDemoData,
+  	guid = HII_DEMO_FORMSET_GUID;
+  
   form formid = 1,
     title = STRING_TOKEN(STR_HIIDEMO_FORM_ADVANCED_TITLE);
     
     text
     help   = STRING_TOKEN(STR_HIIDEMO_FORM_ADVANCED_TEXT_HELP),
     text   = STRING_TOKEN(STR_HIIDEMO_FORM_ADVANCED_TEXT),
-      
-  text   = STRING_TOKEN(STR_HIITEST_NULL);
+    text   = STRING_TOKEN(STR_HIITEST_NULL);
+    
+    text
+    help   = STRING_TOKEN(STR_HIIDEMO_FORM_ADVANCED_ITEM1_HELP),
+    text   = STRING_TOKEN(STR_HIIDEMO_FORM_ADVANCED_ITEM1);
+  
+  	text
+    help   = STRING_TOKEN(STR_HIIDEMO_FORM_ADVANCED_ITEM2_HELP),
+    text   = STRING_TOKEN(STR_HIIDEMO_FORM_ADVANCED_ITEM2);
+  
+    oneof name = UsbLegacySupport,
+      varid = HiiDemoData.UsbLegacySupport,
+   	  prompt = STRING_TOKEN(STR_USB_BIOS_LEGACY_SUPPORT_PROMPT),
+      help = STRING_TOKEN(STR_USB_BIOS_LEGACY_SUPPORT_HELP),
+  		option text = STRING_TOKEN(STR_ENABLE), value = 0x0, flags = 0;
+      option text = STRING_TOKEN(STR_DISABLE), value = 0x1, flags = 0;
+      option text = STRING_TOKEN(STR_AUTO), value = 0x2, flags = DEFAULT;
+    endoneof;
+    
+    grayoutif ideqval HiiDemoData.UsbLegacySupport  == 0x1;
+    	checkbox name = UsbLegacyConfiguration,
+    	  prompt = STRING_TOKEN(STR_USB_BIOS_LEGACY_CONFIGURATION_PROMPT),
+      	help = STRING_TOKEN(STR_USB_BIOS_LEGACY_CONFIGURATION_HELP),
+      	flags = CHECKBOX_DEFAULT | CHECKBOX_DEFAULT_MFG,
+      	default  = TRUE,
+      endcheckbox;
+    endif;
+    
+    checkbox name = CmpSupport,
+    	prompt = STRING_TOKEN(STR_CMP_SUPPORT_PROMPT),
+    	help = STRING_TOKEN(STR_CMP_SUPPORT_PROMPT_HELP),
+    	flags = CHECKBOX_DEFAULT | CHECKBOX_DEFAULT_MFG,
+    	default  = TRUE,
+    endcheckbox;
+       
+    grayoutif TRUE;
+    	checkbox name = CmpChildSupport,
+    	  prompt = STRING_TOKEN(STR_CMP_SUPPORT_CHILD_PROMPT),
+      	help = STRING_TOKEN(STR_CMP_SUPPORT_CHILD_HELP),
+      	flags = CHECKBOX_DEFAULT | CHECKBOX_DEFAULT_MFG,
+      	default  = TRUE,
+      endcheckbox;
+    endif;
+    
+    goto 2,
+    	prompt = STRING_TOKEN(STR_HIIDEMO_FORM_CHIPSET_TITLE);
+    	help = STRING_TOKEN(STR_HIIDEMO_FORM_CHIPSET_TITLE);
+    
+    
+  endform;
 
   form formid = 2,
-    title = STRING_TOKEN(STR_HIIDEMO_FORM_ADVANCED_TITLE);
+    title = STRING_TOKEN(STR_HIIDEMO_FORM_CHIPSET_TITLE);
     
     text
     help   = STRING_TOKEN(STR_HIIDEMO_FORM_ADVANCED_TEXT_HELP),
